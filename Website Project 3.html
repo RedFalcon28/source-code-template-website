@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Website Programming</title>
+    <style>
+      * {
+        text-decoration: none;
+        margin: 0px;
+        padding: 0px;
+      }
+      body {
+        margin: 0px;
+        padding: 0px;
+        
+        font-family: "Open Sans", sans-serif;
+      }
+      .wrapper {
+        width: 1100px;
+        margin: auto;
+        position: relative;
+      }
+      .logo a {
+        font-size: 50px;
+        font-weight: 800px;
+        float: left;
+        font-family: courier;
+        color: #364f6b;
+      }
+      .menu {
+        float: right;
+      }
+      nav {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        line-height: 80px;
+        position: sticky;
+        position: -webkit-sticky;
+        z-index: 1;
+        top: 0px;
+        background-color: #23bbe9;
+        border-bottom: 3px solid #364f6b;
+      }
+
+      nav ul {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        overflow: hidden;
+      }
+      nav ul li {
+        float: left;
+      }
+
+      nav ul li a {
+        color: black;
+        font-weight: bold;
+        text-align: center;
+        padding: 0px 16px 0px 16px;
+        text-decoration: none;
+        padding-left: 5px;
+      }
+
+      nav ul li a:hover {
+        text-decoration: underline;
+      }
+
+      #home img {
+        width: 400px;
+        height: 380px;
+      }
+      #daftarHarga img {
+           width: 400px;
+           height:300px;
+      }
+      section {
+        margin: auto;
+        display: flex;
+        margin-bottom: 50px;
+      }
+
+      .kolom {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 15px;
+      }
+      .kolom .deskripsi {
+        font-size: 20px;
+        font-weight: bold;
+        font-family: "comic sans ms";
+        color: #364f6b;
+      }
+
+      h2 {
+        font-family: "comic sans ms";
+        font-weight: 800;
+        font-size: 45px;
+        margin-bottom: 20px;
+        color: #364f6b;
+        width: 100%;
+        line-height: 50px;
+      }
+
+      a.tbl-biru {
+        background-color: #3f72af;
+        border-radius: 20px;
+        margin-top: 20px;
+        padding: 15px 20px 15px 20px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+      a.tbl-biru:hover {
+        background-color: rgb(228, 92, 115);
+        color: white;
+        text-decoration: none;
+      }
+      
+      
+      p {
+        margin: 10px 0px 10px 0px;
+        padding: 10px 0px 10px 0px;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+        color: #364f6b;
+      }
+      #courses img {
+        width: 400px;
+        height: 380px;
+        margin-left: 15px;
+      }
+      a.tbl-ungu {
+        background-color: #be26c4;
+        border-radius: 20px;
+        margin-top: 20px;
+        color: black;
+        padding: 15px 20px 15px 20px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+      a.tbl-ungu:hover {
+        background-color: rgb(228, 92, 115);
+        color: white;
+        text-decoration: none;
+      }
+      a.tbl-ungu2 {
+        background-color: #be26c4;
+        border-radius: 20px;
+        margin-top: 20px;
+        color: black;
+        padding: 15px 20px 15px 20px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+      a.tbl-ungu2:hover {
+        background-color: rgb(228, 92, 115);
+        color: white;
+        text-decoration: none;
+      }
+          
+      
+      .tengah {
+        text-align: center;
+        width: 100%;
+      }
+      .tutor-list {
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .kartu-tutor {
+        width: 20%;
+        margin: 0 auto;
+      }
+      .kartu-tutor img {
+        width: 80%;
+        border-radius: 50%;
+      }
+      .kartu-tutor p {
+        font-family: "comic sans ms";
+        font-weight: bold;
+      }
+      .kartu-tutor .p3 {
+        position: relative;
+        bottom:  -3px;
+      }
+      .kartu-tutor .javascript {
+        position: relative;
+        bottom: -3px;
+      }
+      .kartu-tutor .tutor3 {
+        height: 115px;
+      }
+      
+      #contact {
+        background-color:#23bbe9;
+        padding: 50px 0px 50px 0px
+      }
+      .footer{
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        margin:auto;
+      }
+      .footer-section {
+        width:20%;
+        margin: 0 auto;
+      }
+      h3 {
+        font-family:'comic sans ms';
+        font-weight: 800;
+        font-size:30px;
+        margin-bottom: 20px;
+        color:#364f6b;
+        width: 100%;
+        line-height: 50px;
+      }
+      .kode-pos{
+        margin-top: -10px;
+        color:white;
+      }
+      .alamat{
+        color:white;
+      }
+      .nomor-telepon{
+        color:white;
+      }
+     .link {
+       color:white;
+     }
+     @media screen and (max-width:991.98px){
+       .wrapper {
+         width: 90%;
+       } 
+       .logo a {
+         display: block;
+         width: 100%;
+         text-align: center;
+       }
+       nav .menu {
+         width: 100%;
+         margin:0;
+       }
+       nav .menu ul {
+         text-align: center;
+         margin:auto;
+         line-height: 60px;
+       }
+       nav .menu ul li {
+         display: inline-block;
+         float:none
+       }
+       section{
+         display: block;
+       }
+       section img{
+         display: block;
+       }
+       .kartu-tutor {
+         width: 50%;
+       }
+       .kartu-partner{
+         width: 50%;
+       }
+     }
+
+     @media screen and (max-width:768px) {
+      .wrapper {
+         width: 100%;
+       } 
+       .logo a {
+         display: block;
+         width: 100%;
+         text-align: center;
+       }
+       nav .menu {
+        display: inline-flex;
+         width:100%;
+         margin:0;
+       }
+       nav .menu ul {
+         text-align: center;
+         margin:auto;
+         line-height: 60px;
+       }
+       nav .menu ul li {
+         display: inline;
+         float:none
+       }
+       section #home{
+         display: flex;
+         justify-content: center;
+       }
+       section img{
+         display: inline-flex;
+         justify-content: center;
+         width: 50%;
+       }
+       .kartu-tutor {
+         width: 50%;
+       }
+       .kartu-partner{
+         width: 50%;
+       }
+     }
+      
+     
+      
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <div class="wrapper">
+        <div class="logo"><a href="">Ozone.com</a></div>
+        <div class="menu">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#daftarHarga">Daftar Harga</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#tutors">Tutors</a></li>
+            <li><a href="#partners">Partners</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="Website Pendaftaraan Ozone.html" class="tbl-biru">Sign Up</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="wrapper">
+      <!-- untuk home-->
+      <section id="home">
+        <img src="../../img/flat-design-content-management-system-illustration_23-2148825230.webp" />
+        <div class="kolom">
+          <h2>Keep coding and learn!</h2>
+          <p class="deskripsi">Belajar Programming #Bersama!</p>
+          <p>Website kursus cocok bagi programmer pemula maupun profesional !</p>
+          
+        </div>
+      </section>
+      <!--untuk daftar harga-->
+      <section id="daftarHarga">
+        <img src="../../../img/Gold coins and banknotes 3d cartoon style icon.jpg">
+        <div class="kolom">
+          <h2>Cek Jadwal dan Daftar Harga Kursus</h2>
+          <p class="deskripsi"> Cek Daftar Harga Disini! </p>
+          <p>Harga murah terjangkau untuk para calon peserta, jadi segera daftar ya</p>
+          <p><a href="../../Project Kursus Programming/Pendaftaran Kursus2.html" class="tbl-ungu">Klik Disini!</a></p>
+        </div>
+      </section>
+      <!--untuk courses-->
+      <section id="courses">
+        <div class="kolom">
+          <h2>Online Courses</h2>
+          <p class="deskripsi">Kursus Bahasa Pemograman</p>
+          
+          <p>
+            Bahasa pemograman merupakan hal yang wajib dikuasai oleh programmer <br />terlebih tepatnya pada zaman modern ini yang dimana sekarang merupakan era 4.0<br />
+            Perusahaan starup sudah banyak bermunculan di indonesia, maka dari itu kita wajib mengasah kemampuan coding kita demi era industri ini.
+          </p>
+          <p><a href="../../Project Kursus Programming/Pendaftaran Kursus.html" class="tbl-ungu2">Daftar kursus disini! </a></p>
+        </div>
+        <img src="../../img/teaching-students-online-internet-learning-computer-programming-online-it-courses-best-online-it-training-online-certification-courses-concept_335657-194.webp" />
+      </section>
+      <!--untuk tutors-->
+      <section id="tutors">
+        <div class="tengah">
+          <div class="kolom">
+            <p class="deskripsi">Our Tutors</p>
+            <h2>Tutors</h2>
+            <p>
+              Profesionalisme dalam menjaga kualitas pengajaran merupakan hal yang patut selalu kami jaga demi kepuasaan konsumen<br />
+              Disini terdapat pengajar yang memiliki sertifikat terkreditasi A, sehingga mutu kualitas akan tetap terjaga.
+            </p>
+          </div>
+          <div class="tutor-list">
+            <div class="kartu-tutor">
+              <img src="../../img/happy-asian-man-standing-with-arms-crossed-grey-wall_171337-10467.webp" />
+              <p>Angga Agung Darmawan</p>
+              <p>SQL</p>
+            </div>
+            <div class="kartu-tutor">
+              <img src="../../img/occupation-successful-profession-camera-thumb_1262-2351.webp" />
+              <p>Rahmat Adisatya Putra</p>
+              <p>C++</p>
+            </div>
+            <div class="kartu-tutor">
+              <img class="tutor3" src="../../img/portrait-surprised-asian-female-using-mobile-phone-with-positive-expression-dressed-casual-clothing-looking-camera-yellow-wall-happy-adorable-glad-woman-rejoices-success_7861-2428.webp" />
+              <p class="p3">Nadya Eka Siregar</p>
+              <p class="javascript">Javascript</p>
+            </div>
+            <div class="kartu-tutor">
+              <img src="../../img/business-finance-employment-female-successful-entrepreneurs-concept-cheerful-successful-businesswoman-white-suit-pointing-fingers-upper-left-corner-showing-advertisement_1258-60049.webp" />
+              <p>Dita Kurniawan Nasution</p>
+              <p>Python</p>
+            </div>
+            <div class="kartu-tutor">
+              <img src="../../img/enthusiastic-cute-asian-girl-winning-rejoicing-from-great-news-victory-dance-smiling-pleased-standin_1258-83149.webp" />
+              <p>Felicia Putri Baskoro</p>
+              <p>Java</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!---Untuk partners-->
+      <section id="partners">
+        <div class="tengah">
+          <div class="kolom">
+            <p class="deskripsi">Our Partners</p>
+            <h2>Partners</h2>
+            <p>Berikut ini adalah beberapa mitra perusahaan yang bekerja sama dengan kami.</p>
+          </div>
+          <div class="partner-list">
+            <div class="kartu-partner">
+              <img src="../../img/cut-circle-company-logo-02302F68D3-seeklogo.com.png">
+            </div>
+            <div class="kartu-partner">
+              <img src="../../img/fun-asiatic-brand-logo-template-260nw-1726061887.jpg"/>
+            </div>
+            <div class="kartu-partner">
+              <img src="../../img/education-technology-logo-template_1061-28.webp"/>
+            </div>
+              <img src="../../img/fashion-logo_23-2148558723.webp"/>
+            </div>
+            <div class="kartu-partner">
+              <img src="../../img/Black Logo Sun.png"/>
+            </div> 
+          </div>
+        </div>
+      </section>
+    </div>
+    <section id="contact">
+      <div class="wrapper">
+        <div class="footer">
+          
+          <div class="footer-section">
+            <h3>Address</h3>
+            <p class="alamat">Jl. Lawanggintung no 28 Bogor Selatan</p>
+            <p class="kode-pos">Kode pos : 16173</p>
+          </div>
+          <div class="footer-section">
+            <h3>Contact</h3>
+            <p class="nomor-telepon">Nomor telepon : 08124511995</p>
+            </div>
+          <div class="footer-section">
+            <h3>Social Media</h3>
+            <p><a class="link" href="@Ozone.com">Instagram : @Ozone.com</a></p>
+          
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

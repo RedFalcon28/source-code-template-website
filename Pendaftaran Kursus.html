@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie edge" />
+    <title>Pendaftaraan Kursus</title>
+  </head>
+  <style>
+    * {
+      text-decoration: none;
+      margin: 0px;
+      padding: 0px;
+    }
+    body {
+      margin: 0px;
+      padding: 0px;
+    }
+    .wrapper .kolom {
+      width: 850px;
+      height: 80px;
+      background-color: #23bbe9;
+      margin: auto;
+      border-radius: 70%;
+      position: relative;
+      top: 40px;
+    }
+
+    .wrapper .pdKursus {
+      text-align: center;
+      font-family: "Courier New", Courier, monospace;
+      font-weight: bold;
+      text-align: center;
+      color: #364f6b;
+      font-size: 40px;
+      padding-top: 15px;
+    }
+    .wrapper2 .form1 {
+      font-family: "comic sans ms";
+      font-weight: bold;
+      font-size: 15px;
+      color: #364f6b;
+    }
+    .wrapper2 .nama {
+      width: 600px;
+      height: 35px;
+      font-family: "comic sans ms";
+      border: 1px solid #23bbe9;
+    }
+    .wrapper2 .labelNama {
+      position: relative;
+      top: 80px;
+      left: 300px;
+    }
+
+    .wrapper3 .form2 {
+      font-family: "comic sans ms";
+      font-weight: bold;
+      font-size: 15px;
+      color: #364f6b;
+    }
+    .wrapper3 .email {
+      width: 600px;
+      height: 35px;
+      font-family: "comic sans ms";
+      border: 1px solid #23bbe9;
+    }
+    .wrapper3 .labelEmail {
+      position: relative;
+      top: 90px;
+      left: 303px;
+    }
+    .wrapper4 .form3 {
+      font-family: "comic sans ms";
+      font-weight: bold;
+      font-size: 15px;
+      color: #364f6b;
+    }
+    .wrapper4 .telepon {
+      width: 600px;
+      height: 35px;
+      font-family: "comic sans ms";
+      border: 1px solid #23bbe9;
+    }
+    .wrapper4 .labelTelepon {
+      position: relative;
+      top: 100px;
+      left: 285px;
+    }
+    .wrapper5 {
+      font-family: "algerian";
+      display: inline-block;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .wrapper5 .form4 {
+      position: relative;
+      top: 140px;
+      left: 350px;
+    }
+    .wrapper5 .sql {
+      padding-left: 3px;
+      color: #23bbe9;
+    }
+    .wrapper5 .form5 {
+      position: relative;
+      top: 117px;
+      left: 450px;
+    }
+    .wrapper5 .cTambah {
+      padding-left: 3px;
+      color: #3676be;
+    }
+    .wrapper5 .form6 {
+      position: relative;
+      top: 93px;
+      left: 550px;
+    }
+    .wrapper5 .javascript {
+      padding-left: 3px;
+      color: rgba(228, 228, 18, 0.726);
+    }
+    .wrapper5 .form7 {
+      position: relative;
+      top: 69px;
+      left: 700px;
+    }
+    .wrapper5 .python {
+      padding-left: 3px;
+      color: #364f6b;
+    }
+    .wrapper5 .python2 {
+      color: rgb(231, 213, 46);
+    }
+    .wrapper5 .form8 {
+      position: relative;
+      top: 45px;
+      left: 820px;
+    }
+    .wrapper5 .java {
+      padding-left: 3px;
+      color: red;
+    }
+    .wrapper5 .java2 {
+      color: #3676be;
+    }
+    .tombolButton {
+      position: relative;
+      top: 60px;
+      left: 355px;
+      width: 75px;
+      height: 25px;
+      border: 1px solid #23bbe9;
+    }
+    .tombolButton .kirimDaftar {
+      font-family: "comic sans ms";
+      color: #23bbe9;
+      padding-left: 17px;
+    }
+    .kirimDaftar {
+      cursor: pointer;
+    }
+
+    .footer .copy-right {
+      margin-top: -10px;
+      width: 100%;
+      background-color: #23bbe9;
+      text-align: center;
+      font-family: "comic sans ms";
+      color: white;
+    }
+  </style>
+  <body>
+    <div class="wrapper">
+      <div class="kolom">
+        <div class="pdKursus">Pendaftaraan Kursus!</div>
+      </div>
+    </div>
+    <div class="wrapper2">
+      <form class="form1">
+        <label class="labelNama">Nama:<input class="nama" type="text" placeholder="Masukan nama" /></label>
+      </form>
+    </div>
+    <div class="wrapper3">
+      <form class="form2">
+        <label class="labelEmail">Email:<input class="email" type="text" placeholder="Masukan email" /></label>
+      </form>
+    </div>
+    <div class="wrapper4">
+      <div class="form3">
+        <label class="labelTelepon">Telepon:<input class="telepon" type="text" placeholder="Masukan nomor telepon" /></label>
+      </div>
+    </div>
+    <div class="wrapper5">
+      <div class="form4"><input type="radio" id="sql" /><label class="sql" for="sql">SQL</label></div>
+      <div class="form5"><input type="radio" id="c++" /><label class="cTambah" for="c++">C++</label></div>
+      <div class="form6"><input type="radio" id="javascript" /><label class="javascript" for="javascript">JAVASCRIPT</label></div>
+      <div class="form7">
+        <input type="radio" id="python" /><label class="python" for="python">Pyt<span class="python2">hon</span></label>
+      </div>
+      <div class="form8">
+        <input type="radio" id="java" /><label class="java" for="java">JA<span class="java2">VA</span></label>
+      </div>
+    </div>
+    <div id="kirim" class="tombolButton">
+      <a class="kirimDaftar" href="Website Project 3.html">Kirim</a>
+    </div>
+    <div class="wrapper6">
+      <div class="waves">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#23bbe9"
+            fill-opacity="1"
+            d="M0,32L40,69.3C80,107,160,181,240,202.7C320,224,400,192,480,154.7C560,117,640,75,720,74.7C800,75,880,117,960,128C1040,139,1120,117,1200,96C1280,75,1360,53,1400,42.7L1440,32L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+          ></path>
+        </svg>
+        <div class="footer">
+          <div class="copy-right">Copyrigt 2022 Ozone.com</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

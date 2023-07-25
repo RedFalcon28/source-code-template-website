@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Website Pendaftaran</title>
+    <style>
+      * {
+        text-decoration: none;
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .container .logo {
+        font-family: "courier";
+        color: #364f6b;
+        text-align: center;
+        font-size: 50px;
+        font-weight: 800px;
+        position: relative;
+        top: 50px;
+      }
+      .tabel {
+        width: 400px;
+        height: 400px;
+        margin: auto;
+        background-color: rgb(221, 219, 219);
+        margin-top: 110px;
+        padding-top: 40px;
+        border: 1px solid rgb(131, 177, 204);
+      }
+      .form1 {
+        color: #364f6b;
+        font-size: 15px;
+        font-weight: bold;
+        position: relative;
+        top: 100px;
+        left: 90px;
+        margin-bottom: 10px;
+        font-family: "comic sans ms";
+        display: inline-flex;
+        justify-content: center;
+      }
+      .form2 {
+        color: #364f6b;
+        font-size: 15px;
+        font-weight: bold;
+        position: relative;
+        top: 94px;
+        left: 88px;
+        margin-bottom: 10px;
+        font-family: "comic sans ms";
+        display: inline-flex;
+        justify-content: center;
+      }
+      .form3 {
+        color: #364f6b;
+        font-size: 15px;
+        font-weight: bold;
+        position: relative;
+        top: 88px;
+        left: 64px;
+        font-family: "comic sans ms";
+        display: inline-flex;
+        justify-content: center;
+      }
+      .form4 {
+        color:#364f6b;
+        font-size: 15px;
+        font-weight:bold ;
+        font-family: "comic sans ms" ;
+        position: relative;
+        top: 90px;
+        left: 31px;
+      }
+      .form5{
+        font-weight:bold ;
+        font-family: "comic sans ms" ;
+        position: relative;
+        top: 85px;
+        left: 170px;
+        color:#364f6b;
+      }
+      
+     .jenisKelamin {
+      position : relative;
+      top: -15px;
+      left: -145px;
+      color:#364f6b;
+      font-weight: bold;
+      font-family: "comic sans ms" ;
+     }
+     .pria {
+      position: relative;
+      top: -13px;
+      left : -140px;
+     }
+     .man {
+      position: relative;
+      top: -13px;
+      left: -139px;
+     }
+      .wanita {
+        position : relative;
+        top : -13px;
+        left: -140px;
+      }
+      .woman {
+        position : relative;
+        top : -13px;
+        left : -138px
+      }
+
+      .button {
+        width: 175px;
+        height: 20px;
+        position: relative;
+        top: 80px;
+        left: 110px;
+        font-family: "comic sans ms";
+        color: #364f6b;
+      }
+      .bulansetengah {
+        width: 120px;
+        height: 120px;
+        position: fixed;
+        top: -25px;
+        left: -20px;
+      }
+      .bulansetengah2 {
+        width: 120px;
+        height: 120px;
+        position: fixed;
+        top: 530px;
+        right: 1270px;
+      }
+      .bulansetengah3 {
+        width: 120px;
+        height: 120px;
+        position: fixed;
+        top: 510px;
+        left: 1275px;
+      }
+      .bulansetengah4 {
+        width: 120px;
+        height: 120px;
+        position: fixed;
+        left: 1275px;
+        top: -1px;
+        
+      }
+      
+      .spa {
+        width: 140px;
+        height:20px;
+        color:#364f6b;
+        position:relative;
+        top : 120px; 
+        left : 110px;
+      }
+      .login {
+        position: relative;
+        top : 100px;
+        left : 245px;
+      }
+   
+        
+      
+    </style>
+  </head>
+  <body>
+    <img src="Background Bulat Biru Setengah.png" class="bulansetengah" />
+    <img src="Background Bulat Biru Setengah 2.png" class="bulansetengah2" />
+    <img src="Background Bulat Biru Setengah 3.png" class="bulansetengah3" />
+    <img src="Background Bulat Biru  Setengah 4.png" class="bulansetengah4" />
+
+    <div class="container">
+      <div class="tabel">
+        <h1 class="logo">Ozone</h1>
+        <form class="form1">
+         <label for="email">Email :</label><input id="email" type="text" class="email" placeholder="Masukan  email" />
+        </form>
+        <br />
+        <form class="form2">
+         <label for="nama">Nama :</label><input id="nama" type="text" class="text" placeholder="Masukan nama lengkap" />
+        </form>
+        <br />
+        <form class="form3">
+        <label for="password">Password :</label> <input id="password" type="password" class="password" placeholder="Masukan kata sandi" />
+        </form>
+        <form class="form4">
+          <label for="tgl-lahir">Tanggal Lahir :</label> <input id="tgl-lahir" type="date" class="tgl-lahir"  >
+        </form>
+        <br/>
+       
+        <form class="form5">
+          <label class="jenisKelamin">Jenis Kelamin :</label><input type="radio" id="pria" name="jenisKelamin" class="pria"><label for="pria" class="man">Pria</label>
+          <input type="radio" id="wanita" name="jenisKelamin" class="wanita"><label for="wanita" class="woman">Wanita</label>
+        </form>
+        
+        <br />
+        <button type="submit" class="button">Daftar</button>
+        <br>
+        <p class="spa">Sudah punya akun ?</p>
+        <p><a href="Website Sign In Ozone.html" class="login">Login</a></p>
+    </div>
+  </body>
+</html>

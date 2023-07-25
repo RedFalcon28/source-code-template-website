@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie edge" />
+    <title>Pendaftaraan Kursus</title>
+    <style>
+      * {
+        text-decoration: none;
+        margin: 0px;
+        padding: 0px;
+      }
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+      .wrapper .kolom {
+        width: 850px;
+        height: 80px;
+        background-color: #23bbe9;
+        margin: auto;
+        border-radius: 70%;
+        position: relative;
+        top: 40px;
+      }
+
+      .wrapper .pdKursus {
+        text-align: center;
+        font-family: "Courier New", Courier, monospace;
+        font-weight: bold;
+        text-align: center;
+        color: #364f6b;
+        font-size: 40px;
+        padding-top: 15px;
+      }
+      .kotak {
+        margin: auto;
+        width: 840px;
+        height: 20px;
+        background-color: #364f6b;
+        margin-top: 90px;
+        border: 1px solid black;
+        position: relative;
+        right: -3px;
+      }
+      .infoKursus {
+        color: white;
+        font-family: "comic sans ms";
+        text-align: center;
+      }
+      .kotak2 {
+        margin: auto;
+        width: 850px;
+        height: 20px;
+        margin-top: -3px;
+        margin-left: 258px;
+      }
+      .bahasaPemograman {
+        width: 230px;
+        height: 20px;
+        border: 1px solid black;
+        border-bottom: none;
+        position: relative;
+        right: 2px;
+        font-family: "comic sans ms";
+        color: black;
+        text-align: center;
+      }
+      .waktuKursus {
+        width: 230px;
+        height: 20px;
+        border: 1px solid black;
+        border-bottom: none;
+        position: relative;
+        left: -5px;
+        font-family: "comic sans ms";
+        color: black;
+        text-align: center;
+      }
+      .hargaKursus {
+        width: 230px;
+        height: 20px;
+        border: 1px solid black;
+        border-bottom: none;
+        position: relative;
+        left: -8px;
+        font-family: "comic sans ms";
+        color: black;
+        text-align: center;
+      }
+
+      .bahasaPemograman2 {
+        width: 230px;
+        height: 20px;
+        border: 1px solid black;
+        font-family: "algerian";
+        color: #23bbe9;
+        text-align: center;
+        position: relative;
+        left: -2px;
+        top: -5px;
+      }
+      .waktuKursus2 {
+        width: 230px;
+        height: 20px;
+        border: 1px solid black;
+        position: relative;
+        left: -5px;
+        top: -5px;
+        font-family: "comic sans ms";
+        color: black;
+        text-align: center;
+      }
+      .hargaKursus2 {
+        width: 230px;
+        height: 20px;
+        border: 1px solid black;
+        position: relative;
+        left: -8px;
+        top: -5px;
+        font-family: "comic sans ms";
+        color: black;
+        text-align: center;
+      }
+
+      .bahasaPemograman3 {
+        width: 230px;
+        height: 20px;
+        border: 1px solid black;
+        border-top: none;
+        font-family: "algerian";
+        color: #3676be;
+        text-align: center;
+        position: relative;
+        left: -2px;
+        top: -7px;
+      }
+      .waktuKursus3 {
+        width: 230px;
+        height: 20px;
+        border: 1px solid black;
+        border-top: none;
+        position: relative;
+        left: -5px;
+        top: -7px;
+        font-family: "comic sans ms";
+        color: black;
+        text-align: center;
+      }
+      .hargaKursus3 {
+        width: 230px;
+        height: 20px;
+        border: 1px solid black;
+        border-top: none;
+        position: relative;
+        left: -8px;
+        top: -7px;
+        font-family: "comic sans ms";
+        color: black;
+        text-align: center;
+      }
+      .bahasaPemograman4 {
+        width: 230px;
+        height: 20px;
+        border: 1px solid black;
+        border-top: none;
+        font-family: "algerian";
+        color: rgba(228, 228, 18, 0.726);
+        text-align: center;
+        position: relative;
+        left: -2px;
+        top: -13px;
+      }
+      .waktuKursus4 {
+        width: 230px;
+        height: 20px;
+        border: 1px solid black;
+        border-top: none;
+        position: relative;
+        left: -5px;
+        top: -13px;
+        font-family: "comic sans ms";
+        color: black;
+        text-align: center;
+      }
+      .hargaKursus4 {
+        width: 230px;
+        height: 20px;
+        border: 1px solid black;
+        border-top: none;
+        position: relative;
+        left: -8px;
+        top: -13px;
+        font-family: "comic sans ms";
+        color: black;
+        text-align: center;
+      }
+      .bahasaPemograman5 {
+        width: 230px;
+        height: 20px;
+        border: 1px solid black;
+        border-top: none;
+        font-family: "algerian";
+        text-align: center;
+        position: relative;
+        left: -2px;
+        top: -15px;
+      }
+      .pyt {
+        color: #364f6b;
+      }
+      .hon {
+        color: rgb(231, 213, 46);
+      }
+      .waktuKursus5 {
+        width: 230px;
+        height: 20px;
+        border: 1px solid black;
+        border-top: none;
+        position: relative;
+        left: -5px;
+        top: -15px;
+        font-family: "comic sans ms";
+        color: black;
+        text-align: center;
+      }
+      .hargaKursus5 {
+        width: 230px;
+        height: 20px;
+        border: 1px solid black;
+        border-top: none;
+        position: relative;
+        left: -8px;
+        top: -15px;
+        font-family: "comic sans ms";
+        color: black;
+        text-align: center;
+      }
+      .bahasaPemograman6 {
+        width: 230px;
+        height: 20px;
+        border: 1px solid black;
+        border-top: none;
+        font-family: "algerian";
+        text-align: center;
+        position: relative;
+        left: -2px;
+        top: -18px;
+      }
+
+      .ja {
+        color: red;
+      }
+      .va {
+        color: #3676be;
+      }
+      .waktuKursus6 {
+        width: 230px;
+        height: 20px;
+        border: 1px solid black;
+        border-top: none;
+        position: relative;
+        left: -5px;
+        top: -18px;
+        font-family: "comic sans ms";
+        color: black;
+        text-align: center;
+      }
+      .hargaKursus6 {
+        width: 230px;
+        height: 20px;
+        border: 1px solid black;
+        border-top: none;
+        position: relative;
+        left: -8px;
+        top: -18px;
+        font-family: "comic sans ms";
+        color: black;
+        text-align: center;
+      }
+      .gambarDaun1 {
+        width: 85px;
+        height: 100px;
+        position: relative;
+        top: 30px;
+        left: 30px;
+      }
+      .gambarDaun2 {
+        width: 85px;
+        height: 100px;
+        position: relative;
+        top: 180px;
+        left: 30px;
+      }
+      .gambarDaun3 {
+        width: 85px;
+        height: 100px;
+        position: relative;
+        top: 500px;
+        right: -950px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="judul">
+      <div class="wrapper">
+        <div class="kolom">
+          <div class="pdKursus">Daftar Harga Kursus</div>
+        </div>
+      </div>
+    </section>
+    <div class="backgroundGambar">
+      <img class="gambarDaun1" src="BackgroundDaun1.png" />
+      <img class="gambarDaun2" src="BackgroundDaun2.png" />
+      <img class="gambarDaun3" src="BackgroundDaun3.png" />
+    </div>
+
+    <section class="tabel">
+      <table class="kotak">
+        <tr>
+          <td class="infoKursus">Info Kursus</td>
+        </tr>
+      </table>
+      <table class="kotak2">
+        <tr>
+          <td class="bahasaPemograman">Bahasa Pemograman</td>
+          <td class="waktuKursus">Waktu Kursus</td>
+          <td class="hargaKursus">Harga Kursus</td>
+        </tr>
+
+        <tr>
+          <td class="bahasaPemograman2">SQL</td>
+          <td class="waktuKursus2">
+            1 Bulan 6X Seminggu 2 Jam <br />
+            6 Bulan 6X Seminggu 2 Jam <br />
+            1 Tahun 6X Seminggu 2 Jam
+          </td>
+          <td class="hargaKursus2">
+            Rp.4.500.0000 <br />
+            Rp.6.000.000 <br />
+            Rp.8.000.000
+          </td>
+        </tr>
+
+        <tr>
+          <td class="bahasaPemograman3">C++</td>
+          <td class="waktuKursus3">
+            1 Bulan 6X Seminggu 2 Jam <br />
+            6 Bulan 6X Seminggu 2 Jam <br />
+            1 Tahun 6X Seminggu 2 Jam
+          </td>
+          <td class="hargaKursus3">
+            Rp.5.000.000 <br />
+            Rp.8.000.000 <br />
+            Rp.10.000.000
+          </td>
+        </tr>
+        <tr>
+          <td class="bahasaPemograman4">JAVASCRIPT</td>
+          <td class="waktuKursus4">
+            1 Bulan 6X Seminggu 2 Jam <br />
+            6 Bulan 6X Seminggu 2 Jam <br />
+            1 Tahun 6X Seminggu 2 Jam
+          </td>
+          <td class="hargaKursus4">
+            Rp.4.500.000 <br />
+            Rp.5.500.000 <br />
+            Rp.8.000.000
+          </td>
+        </tr>
+        <tr>
+          <td class="bahasaPemograman5">
+            <span class="pyt">PYT</span>
+            <span class="hon">HON</span>
+          </td>
+          <td class="waktuKursus5">
+            1 Bulan 6X Seminggu 2 Jam <br />
+            6 Bulan 6X Seminggu 2 Jam <br />
+            1 Tahun 6x Seminggu 2 Jam
+          </td>
+          <td class="hargaKursus5">
+            Rp.4.000.000 <br />
+            Rp.6.000.000 <br />
+            Rp.8.000.000
+          </td>
+        </tr>
+        <tr>
+          <td class="bahasaPemograman6">
+            <span class="ja">JA</span>
+            <span class="va">VA</span>
+          </td>
+          <td class="waktuKursus6">
+            1 Bulan 6X Seminggu 2 Jam <br />
+            6 Bulan 6X Seminggu 2 Jam <br />
+            1 Tahun 6X Seminggu 2 Jam
+          </td>
+          <td class="hargaKursus6">
+            Rp 5.000.000 <br />
+            Rp 7.000.000 <br />
+            Rp 9.000.000
+          </td>
+        </tr>
+      </table>
+    </section>
+  </body>
+</html>
